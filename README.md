@@ -2,10 +2,10 @@ Repo of example code to demonstrate saltstack issue: https://github.com/saltstac
 
 To use, simply clone this repo and follow these steps to compare the output between salt-minion and salt-ssh:
 
-  1.) vagrant up buster
-  2.) vagrant ssh buster
-  3.) sudo salt asaltminion state.apply optargs test=true
-  4.) sudo salt-ssh asaltminon state.apply optargs test=true
+    1.) vagrant up buster
+    2.) vagrant ssh buster
+    3.) sudo salt asaltminion state.apply optargs test=true
+    4.) sudo salt-ssh asaltminon state.apply optargs test=true
 
 **Description**
 
