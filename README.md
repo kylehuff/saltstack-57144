@@ -1,5 +1,12 @@
 Repo of example code to demonstrate saltstack issue: https://github.com/saltstack/salt/issues/57144
 
+To use, simply clone this repo and follow these steps to compare the output between salt-minion and salt-ssh:
+
+  1.) vagrant up buster
+  2.) vagrant ssh buster
+  3.) sudo salt asaltminion state.apply optargs test=true
+  4.) sudo salt-ssh asaltminon state.apply optargs test=true
+
 **Description**
 
 The value of the cli kwarg `test` is always False in both a state.apply and a runner (publish.runner within a state) while executing the state module via salt-ssh.
