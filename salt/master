@@ -1,0 +1,8 @@
+runner_dirs: ["/srv/salt/modules/runners"]
+file_roots:
+  base:
+    - /srv/salt/states
+peer_run:
+  .*:
+    - optargs.*
+auto_accept: True
